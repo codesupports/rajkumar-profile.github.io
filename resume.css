@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Remove default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+/* Set default font and line height */
+html {
+    font-size: 100%; /* 16px by default */
+    line-height: 1.5;
+}
+
+/* Remove list styles */
+ul {
+    list-style: none;
+}
+
+/* Remove border for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space */
+}
+
+/* Remove default styles for links */
+a {
+    text-decoration: none;
+    color: inherit; /* Use the inherited color */
+}
+
+/* Set default table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default styles for form elements */
+button, input, textarea {
+    font-family: inherit; /* Use the inherited font */
+    font-size: inherit; /* Use the inherited font size */
+}
+
+/* Remove default fieldset styles */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Set default focus outline for accessibility */
+:focus {
+    outline: none; /* Remove outline */
+}
+
+:focus-visible {
+    outline: 2px solid #007BFF; /* Custom outline for accessibility */
+}
+
+
+main{
+    max-width: 900px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+main section{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+main aside:first-child{
+    width: 300px;
+    background-color: #083361;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.profile__photo{
+    background: url(./Raj-photo2.jpg) left top no-repeat;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.left__block--img--set{
+    display: grid;
+    justify-content: center;
+    padding: 25px 0 10px;
+}
+.left__block--img{
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left__block--contact--sec{
+    padding: 25px 25px 0 ;
+}
+.left__block--contact--sec h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+    font-size: 22px;
+    font-weight: 100;
+}
+.left__block--contact--sec li{
+    padding: 0 0 5px 20px;
+    font-size: 16px;
+    position: relative;
+}
+.left__block--contact--sec li::before{
+    content: '\2022';
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+/* .left__block--contact--sec .contact--sec li::before{
+    
+} */
+/* .left__block--contact--sec .contact--sec  li:nth-of-type(1)::before{
+    content: '\2709';
+}
+.left__block--contact--sec .contact--sec li:nth-of-type(2)::before{
+    content: '\260E';
+}
+.left__block--contact--sec .contact--sec li:nth-of-type(3)::before{
+    content: '\260E';
+}
+.left__block--contact--sec .contact--sec li:nth-of-type(4)::before{
+    content: '\260E';
+} */
+
+/* right block */
+main aside:last-child{
+    padding: 25px;
+    font-size: 15px;
+}
+.name__block{
+    background-color: #f5f5f5;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.name__block h1{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.name__block span{
+    display: grid;
+    height: 2px;
+    background-color: black; width: 120px;
+    margin: 16px auto;
+}
+.summery__block{
+    padding-top: 16px;
+}
+.summery__block h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid #083361;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+    font-size: 22px;
+    color: #083361;
+}
+.positin__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 16px;
+}
+.positin__block div:first-child{
+    font-weight: bold;
+}
+.positin__block div:last-child{
+    text-align: right;
+    font-size: 13px;
+    display: grid;
+    align-items: end;
+}
+.summery__block p{
+    margin-bottom: 8px;
+}
+.summery__block ol{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.summery__block ol strong{
+    color: #333;
+}
+.summery__block ol li ul li{
+    list-style-type: disc;
+    margin-left: 17px;
+}
+.heading--block{
+    /* background-color: #e3e3e3; */
+    padding: 5px 0;
+    border-bottom: 1px dotted #b4b4b4;
+}
+.logo-coforge{
+    width:60px
+}
+table, th, td {
+    border: 1px solid rgb(204, 204, 204);
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+  }
+  table td, table th{
+    padding: 3px 0 3px 10px;
+  }
+  .download{
+    text-align: right;
+    padding: 15px 10px 15px;
+  }
+  .download-btn{
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 12px;
+    border-radius: .25rem;
+  }
